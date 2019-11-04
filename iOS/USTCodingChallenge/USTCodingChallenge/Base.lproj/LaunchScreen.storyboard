@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="CV" useStoryboardIdentifierAsRestorationIdentifier="YES" id="01J-lp-oVM" customClass="ViewController" customModule="USTCodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jbu-wQ-kvh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CVSection" id="yRw-RV-cE3" customClass="CVCell" customModule="USTCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yRw-RV-cE3" id="Icq-lq-c5H">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-R2-s4K" userLabel="CV Section Label">
+                                            <rect key="frame" x="36" y="19" width="342" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RDZ-R2-s4K" firstAttribute="leading" secondItem="Icq-lq-c5H" secondAttribute="leadingMargin" constant="16" id="ald-bG-plE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="RDZ-R2-s4K" secondAttribute="bottom" constant="8" id="bdr-TG-XpT"/>
+                                        <constraint firstItem="RDZ-R2-s4K" firstAttribute="top" secondItem="Icq-lq-c5H" secondAttribute="topMargin" constant="8" id="cI5-I4-Dbq"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RDZ-R2-s4K" secondAttribute="trailing" constant="16" id="e2F-DS-Ayy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cvLabel" destination="RDZ-R2-s4K" id="bzW-Kv-ZfK"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CVDetails" id="kq0-fQ-RKB" customClass="CVCell" customModule="USTCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="87" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kq0-fQ-RKB" id="mYP-45-dab">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-et-VwA" userLabel="CV Details Label">
+                                            <rect key="frame" x="36" y="19" width="342" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kgh-et-VwA" firstAttribute="top" secondItem="mYP-45-dab" secondAttribute="topMargin" constant="8" id="HR5-aL-zgq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Kgh-et-VwA" secondAttribute="bottom" constant="8" id="bUh-fn-RKG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Kgh-et-VwA" secondAttribute="trailing" constant="16" id="kvD-bE-rq3"/>
+                                        <constraint firstItem="Kgh-et-VwA" firstAttribute="leading" secondItem="mYP-45-dab" secondAttribute="leadingMargin" constant="16" id="zeE-DJ-605"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cvLabel" destination="Kgh-et-VwA" id="Vbi-HI-lzQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NPk-PT-jc5"/>
+                    <connections>
+                        <outlet property="cvTable" destination="Jbu-wQ-kvh" id="3KS-6r-THC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
